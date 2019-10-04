@@ -19,6 +19,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* lottieTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* lottieTestTests.m */; };
 		6A30ACFC62EA400C842D38CE /* libPods-lottieTest-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4466D9A2784723D219B996F /* libPods-lottieTest-tvOS.a */; };
 		9C437D12B0C607A97A6C054D /* libPods-lottieTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAC4DC1748BAAE1C9A36AE6 /* libPods-lottieTest.a */; };
+		AD981DCD2347B83800BA2D97 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD981DCC2347B83800BA2D97 /* File.swift */; };
 		D41651D1BEC791550F56D9C3 /* libPods-lottieTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C84E466D812C2B7DE253068 /* libPods-lottieTestTests.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,8 @@
 		7AAE39E0875EC22FA1DB08F0 /* Pods-lottieTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottieTest.debug.xcconfig"; path = "Target Support Files/Pods-lottieTest/Pods-lottieTest.debug.xcconfig"; sourceTree = "<group>"; };
 		7BD412C7915CA668FD14F5A1 /* Pods-lottieTest-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottieTest-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-lottieTest-tvOSTests/Pods-lottieTest-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		90B193B9528C5A25A0997EF1 /* Pods-lottieTest-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottieTest-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-lottieTest-tvOSTests/Pods-lottieTest-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD981DCB2347B83700BA2D97 /* lottieTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lottieTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD981DCC2347B83800BA2D97 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		AE656585A2A237918694C965 /* Pods-lottieTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottieTest.release.xcconfig"; path = "Target Support Files/Pods-lottieTest/Pods-lottieTest.release.xcconfig"; sourceTree = "<group>"; };
 		B93F31AD803355C2F469CF1B /* Pods-lottieTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottieTestTests.debug.xcconfig"; path = "Target Support Files/Pods-lottieTestTests/Pods-lottieTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4466D9A2784723D219B996F /* libPods-lottieTest-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lottieTest-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +164,6 @@
 				B93F31AD803355C2F469CF1B /* Pods-lottieTestTests.debug.xcconfig */,
 				4A3E2C7329CFDFCE327CDF0C /* Pods-lottieTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,12 +177,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				AD981DCC2347B83800BA2D97 /* File.swift */,
 				13B07FAE1A68108700A75B9A /* lottieTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* lottieTestTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				81B6B20FA4D53E8EC931A41B /* Pods */,
+				AD981DCB2347B83700BA2D97 /* lottieTest-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -292,6 +296,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1100;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -308,6 +315,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -529,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				AD981DCD2347B83800BA2D97 /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B93F31AD803355C2F469CF1B /* Pods-lottieTestTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -605,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A3E2C7329CFDFCE327CDF0C /* Pods-lottieTestTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = lottieTestTests/Info.plist;
@@ -626,6 +637,7 @@
 			baseConfigurationReference = 7AAE39E0875EC22FA1DB08F0 /* Pods-lottieTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = lottieTest/Info.plist;
@@ -637,6 +649,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = lottieTest;
+				SWIFT_OBJC_BRIDGING_HEADER = "lottieTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -646,6 +661,7 @@
 			baseConfigurationReference = AE656585A2A237918694C965 /* Pods-lottieTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = lottieTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -656,6 +672,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = lottieTest;
+				SWIFT_OBJC_BRIDGING_HEADER = "lottieTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

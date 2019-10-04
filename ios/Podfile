@@ -34,6 +34,8 @@ target 'lottieTest' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+
+
   pod 'lottie-ios', :path => '../node_modules/lottie-ios'
 
   pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
